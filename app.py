@@ -3,10 +3,6 @@ import streamlit as st
 import pymongo
 from pymongo import MongoClient
 import os
-from dotenv import load_dotenv
-
-# Cargar variables de entorno (para credenciales de MongoDB)
-load_dotenv()
 
 def connect_to_mongodb():
     """Conectar a MongoDB Atlas usando la cadena de conexión"""
@@ -87,3 +83,4 @@ if st.button("Buscar Teatros"):
 
 st.divider()
 st.write("Nota: Esta aplicación requiere una conexión a MongoDB Atlas con acceso a la base de datos sample_mflix.")
+

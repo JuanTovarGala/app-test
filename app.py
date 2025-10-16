@@ -5,7 +5,7 @@ from pymongo import MongoClient
 import os
 
 def connect_to_mongodb():
-    """Conectar a MongoDB Atlas usando la cadena de conexión"""
+    """Conectar a MongoDB Atlas utilizando la cadena de conexión"""
     connection_string = openai_key = st.secrets["app"]["MONGODB_CONNECTION_STRING"]
     if not connection_string:
         st.error("Error: No se encontró la variable de entorno MONGODB_CONNECTION_STRING")
